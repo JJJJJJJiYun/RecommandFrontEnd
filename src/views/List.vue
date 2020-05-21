@@ -51,9 +51,9 @@ export default {
     var that = this;
     axios
       .get(
-        "http://localhost:8888/getItemList?item_type=" +
+        "http://localhost:8888/getItemList?itemType=" +
           this.$route.path.slice(1, -1) +
-          "&page=1&page_size=100"
+          "&page=1&pageSize=100"
       )
       .then(res => {
         console.log(res);
@@ -68,9 +68,9 @@ export default {
       var that = this;
       axios
         .get(
-          "http://localhost:8888/action?item_id=" +
+          "http://localhost:8888/action?itemId=" +
             item_id +
-            "&action=read&item_type=" +
+            "&action=read&itemType=" +
             item_type
         )
         .then(res => {

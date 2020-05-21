@@ -155,7 +155,7 @@ export default {
         var item_urls = [];
         res.data.data.list.forEach(element => {
           item_urls.push(
-            "http://localhost:8888/getItem?item_type=" +
+            "http://localhost:8888/getItem?itemType=" +
               element.itemType +
               "&id=" +
               element.itemId
@@ -183,9 +183,9 @@ export default {
       var that = this;
       axios
         .get(
-          "http://localhost:8888/action?item_id=" +
+          "http://localhost:8888/action?itemId=" +
             item_id +
-            "&action=read&item_type=" +
+            "&action=read&itemType=" +
             item_type
         )
         .then(res => {

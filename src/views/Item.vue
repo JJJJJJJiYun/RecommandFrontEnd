@@ -18,7 +18,7 @@ export default {
     var that = this;
     axios
       .get(
-        "http://localhost:8888/getItem?item_type=" +
+        "http://localhost:8888/getItem?itemType=" +
           this.$route.path.split("/")[1] +
           "&id=" +
           this.$route.params.id
