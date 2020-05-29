@@ -5,15 +5,15 @@
         <Carousel />
       </el-col>
       <el-col :span="12" class="boder-1px">
-        <el-row class="title-row">
+        <el-row class="title-row" style="padding-top:0">
           <el-col :span="24">
-            <div class="grid-content bg-purple-dark">您的推荐</div>
+            <div class="grid-content bg-purple-dark" style="font-size:20px">您的推荐</div>
           </el-col>
         </el-row>
         <el-row v-for="(item,index) in items" :key="index">
           <el-col :span="24">
             <div class="grid-content bg-purple">
-              <a :href="'/'+item.itemType+'/'+item.id" v-on:click="record_action(item.id, item.itemType)">{{item.title}}</a>
+              <a :href="'/'+item.itemType+'/'+item.id" v-on:click="record_action(item.id, item.itemType)" style="font-size: 15px;font-family: STSong">{{item.title}}</a>
             </div>
           </el-col>
         </el-row>

@@ -1,10 +1,35 @@
 <template>
   <div class="content-box">
-    <h2>{{item.title}}</h2>
-     <DIV align=center><FONT color=#077da6>-----------------------------------------------------------------------------------------</FONT></DIV>
-    <p style="line-height:2.4;color=#4B4B4B">{{item.content}}</p>
+    <p class="p-title">{{item.title}}</p>
+    <p class="p-time">{{item.timestamp}}</p>
+    <p class="p-content">{{item.content}}</p>
   </div>
 </template>
+
+<style lang="less" scoped>
+.p-title {
+  height: 70px;
+  line-height: 50px;
+  font-size: 38px;
+  color: #4d4f53;
+  border-bottom: 1px solid;
+  border-bottom-color: #dddddd;
+  padding-top: 10px;
+}
+.p-time {
+  line-height: 20px;
+  font-size: 15px;
+  color: #999999;
+  border-bottom: 1px solid;
+  border-bottom-color: #dddddd;
+  padding: 10px;
+}
+.p-content {
+  font-size: 17px;
+  font-family: STSong;
+  line-height: 2.4;
+}
+</style>
 
 <script>
 import axios from "axios";

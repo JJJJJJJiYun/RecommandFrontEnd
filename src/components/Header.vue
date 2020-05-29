@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="padding: 10px">
     <el-header height="120px"></el-header>
     <el-menu
       class="el-menu-demo"
