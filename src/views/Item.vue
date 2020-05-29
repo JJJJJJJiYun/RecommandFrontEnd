@@ -1,7 +1,8 @@
 <template>
   <div class="content-box">
-    <h3>{{item.title}}</h3>
-    <p>{{item.content}}</p>
+    <h2>{{item.title}}</h2>
+     <DIV align=center><FONT color=#077da6>-----------------------------------------------------------------------------------------</FONT></DIV>
+    <p style="line-height:2.4;color=#4B4B4B">{{item.content}}</p>
   </div>
 </template>
 

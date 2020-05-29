@@ -98,16 +98,16 @@ a {
   text-decoration: none;
 }
 a:link {
-  color: white;
+  color: #4B4B4B;
 }
 a:visited {
-  color: white;
+  color: #4B4B4B;
 }
 a:hover {
-  color: white;
+  color: #4B4B4B;
 }
 a:active {
-  color: white;
+  color: #4B4B4B;
 }
 .home-img {
   width: 600px;
@@ -118,7 +118,7 @@ a:active {
   height: 130px;
 }
 .bg-purple {
-  background: #d3dce6;
+  background: #DDDDDD;
   height: 40px;
   line-height: 40px;
 }
